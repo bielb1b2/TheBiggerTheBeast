@@ -10,4 +10,6 @@ public class ServletInitializer extends SpringBootServletInitializer {
 		return application.sources(ThegloryApplication.class);
 	}
 
+	private static Class<ServletInitializer> applicationClass = ServletInitializer.class;
+
 }

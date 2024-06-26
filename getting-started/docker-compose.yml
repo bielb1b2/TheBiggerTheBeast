@@ -1,0 +1,22 @@
+services:
+  cu-do-wildfly:
+    image: bitnami/wildfly
+
+    ports:
+      - 8080:8080
+      - 8081:8081
+      - 3001:3001
+      - 8443:8443
+
+    environment:
+      - WILDFLY_USERNAME=user
+      - WILDFLY_PASSWORD=admin12345678
+      - WILDFLY_MANAGEMENT_LISTEN_ADDRESS=0.0.0.0
+      - WILDFLY_MANAGEMENT_PORT_NUMBER=3001
+
+    networks:
+      - wildfly-tier
+
+networks:
+  wildfly-tier:
+    driver: bridge
