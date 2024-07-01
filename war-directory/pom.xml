@@ -68,13 +68,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.thefake.thelib</groupId>
 			<artifactId>thelib</artifactId>
 			<scope>system</scope>
 			<version>0.0.1-RELEASE</version>
 			<systemPath>/home/biel/desktop/projects/theBeastTheGlory/thelib/target/thelib-0.0.1-RELEASE.jar</systemPath>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<build>
